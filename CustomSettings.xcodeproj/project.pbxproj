@@ -12,6 +12,11 @@
 		054B135A23CB6D2B0047E0B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054B135823CB6D2B0047E0B6 /* Main.storyboard */; };
 		054B135C23CB6D2D0047E0B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054B135B23CB6D2D0047E0B6 /* Assets.xcassets */; };
 		054B135F23CB6D2D0047E0B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054B135D23CB6D2D0047E0B6 /* LaunchScreen.storyboard */; };
+		054B136B23CB70590047E0B6 /* ThemeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B136723CB70590047E0B6 /* ThemeLabel.swift */; };
+		054B136C23CB70590047E0B6 /* ColorsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B136823CB70590047E0B6 /* ColorsConstant.swift */; };
+		054B136D23CB70590047E0B6 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B136923CB70590047E0B6 /* ThemeView.swift */; };
+		054B137023CB70630047E0B6 /* SettingBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B136F23CB70620047E0B6 /* SettingBundleHelper.swift */; };
+		054B137223CB718B0047E0B6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 054B137123CB718B0047E0B6 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		054B135B23CB6D2D0047E0B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054B135E23CB6D2D0047E0B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054B136023CB6D2D0047E0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054B136723CB70590047E0B6 /* ThemeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeLabel.swift; sourceTree = "<group>"; };
+		054B136823CB70590047E0B6 /* ColorsConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstant.swift; sourceTree = "<group>"; };
+		054B136923CB70590047E0B6 /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		054B136F23CB70620047E0B6 /* SettingBundleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingBundleHelper.swift; sourceTree = "<group>"; };
+		054B137123CB718B0047E0B6 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				054B135323CB6D2B0047E0B6 /* CustomSettings */,
+				054B137123CB718B0047E0B6 /* Settings.bundle */,
 				054B135223CB6D2B0047E0B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +65,8 @@
 		054B135323CB6D2B0047E0B6 /* CustomSettings */ = {
 			isa = PBXGroup;
 			children = (
+				054B136F23CB70620047E0B6 /* SettingBundleHelper.swift */,
+				054B136623CB70590047E0B6 /* Theme Components */,
 				054B135423CB6D2B0047E0B6 /* AppDelegate.swift */,
 				054B135623CB6D2B0047E0B6 /* ViewController.swift */,
 				054B135823CB6D2B0047E0B6 /* Main.storyboard */,
@@ -62,6 +75,16 @@
 				054B136023CB6D2D0047E0B6 /* Info.plist */,
 			);
 			path = CustomSettings;
+			sourceTree = "<group>";
+		};
+		054B136623CB70590047E0B6 /* Theme Components */ = {
+			isa = PBXGroup;
+			children = (
+				054B136723CB70590047E0B6 /* ThemeLabel.swift */,
+				054B136823CB70590047E0B6 /* ColorsConstant.swift */,
+				054B136923CB70590047E0B6 /* ThemeView.swift */,
+			);
+			path = "Theme Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B137223CB718B0047E0B6 /* Settings.bundle in Resources */,
 				054B135F23CB6D2D0047E0B6 /* LaunchScreen.storyboard in Resources */,
 				054B135C23CB6D2D0047E0B6 /* Assets.xcassets in Resources */,
 				054B135A23CB6D2B0047E0B6 /* Main.storyboard in Resources */,
@@ -136,7 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B135723CB6D2B0047E0B6 /* ViewController.swift in Sources */,
+				054B136B23CB70590047E0B6 /* ThemeLabel.swift in Sources */,
 				054B135523CB6D2B0047E0B6 /* AppDelegate.swift in Sources */,
+				054B137023CB70630047E0B6 /* SettingBundleHelper.swift in Sources */,
+				054B136D23CB70590047E0B6 /* ThemeView.swift in Sources */,
+				054B136C23CB70590047E0B6 /* ColorsConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

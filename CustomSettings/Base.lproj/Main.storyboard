@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,35 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomSettings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ThemeView" customModule="CustomSettings" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5D-53-xpe" customClass="ThemeLabel" customModule="CustomSettings" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxd-rf-RVt" customClass="ThemeLabel" customModule="CustomSettings" customModuleProvider="target">
+                                <rect key="frame" x="20" y="113" width="374" height="729"/>
+                                <mutableString key="text">A story within a story (or story within a plot) is a literary device in which one character within a narrative narrates.[1] Mise en abyme is the French term for a similar literary device (also referring to the practice in heraldry of placing the image of a small shield on a larger shield). A story within a story can be used in all types of narration: novels, short stories, plays, television programs, films, poems, songs, and philosophical essays. The inner stories are told either simply to entertain or more usually to act as an example to the other characters. In either case, the story often has a symbolic and psychological significance for the characters in the outer story. There is often some parallel between the two stories, and the fiction of the inner story is used to reveal the truth in the outer story. Often the stories within a story are used to satirize views, not only in the outer story, but also in the real world. When a story is told within another instead of being told as part of the plot, it allows the author to play on the reader's perceptions of the characters—the motives and the reliability of the storyteller are automatically in question. Stories within a story may disclose the background of characters or events, tell of myths and legends that influence the plot, or even seem to be extraneous diversions from </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oxd-rf-RVt" secondAttribute="trailing" constant="20" id="D71-jA-bza"/>
+                            <constraint firstItem="oxd-rf-RVt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gai-UN-UN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b5D-53-xpe" secondAttribute="trailing" constant="20" id="XmX-IF-iJq"/>
+                            <constraint firstItem="b5D-53-xpe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bzL-2h-CWC"/>
+                            <constraint firstItem="b5D-53-xpe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dh5-Op-tQd"/>
+                            <constraint firstItem="oxd-rf-RVt" firstAttribute="top" secondItem="b5D-53-xpe" secondAttribute="bottom" constant="20" id="h4a-iQ-hBU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oxd-rf-RVt" secondAttribute="bottom" constant="20" id="tJl-x6-i4V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
